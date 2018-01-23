@@ -2346,8 +2346,6 @@ void print_hash_tests(void)
 	droplp_hash(&hash[0], &buf[0]);
 	printpfx("drop", hash);
 
-	freshhash(&hash[0], &buf[0], 80);
-	printpfx("fresh", hash);
 
 	groestlhash(&hash[0], &buf[0]);
 	printpfx("groestl", hash);

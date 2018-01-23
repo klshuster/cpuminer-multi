@@ -65,7 +65,6 @@ cpuminer_SOURCES = \
   algo/cryptolight.c \
   algo/decred.c \
   algo/drop.c \
-  algo/fresh.c \
   algo/groestl.c \
   algo/heavy.c \
   algo/ink.c \

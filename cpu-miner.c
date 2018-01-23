@@ -2220,9 +2220,6 @@ static void *miner_thread(void *userdata)
 		case ALGO_DROP:
 			rc = scanhash_drop(thr_id, &work, max_nonce, &hashes_done);
 			break;
-		case ALGO_FRESH:
-			rc = scanhash_fresh(thr_id, &work, max_nonce, &hashes_done);
-			break;
 		case ALGO_DMD_GR:
 		case ALGO_GROESTL:
 			rc = scanhash_groestl(thr_id, &work, max_nonce, &hashes_done);

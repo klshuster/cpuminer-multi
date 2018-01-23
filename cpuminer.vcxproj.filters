@@ -198,9 +198,6 @@
     <ClCompile Include="algo\decred.c">
       <Filter>algo</Filter>
     </ClCompile>
-    <ClCompile Include="algo\fresh.c">
-      <Filter>algo</Filter>
-    </ClCompile>
     <ClCompile Include="algo\groestl.c">
       <Filter>algo</Filter>
     </ClCompile>

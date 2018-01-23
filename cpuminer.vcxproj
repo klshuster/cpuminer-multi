@@ -214,7 +214,6 @@
     <ClCompile Include="algo\cryptonight.c" />
     <ClCompile Include="algo\decred.c" />
     <ClCompile Include="algo\drop.c" />
-    <ClCompile Include="algo\fresh.c" />
     <ClCompile Include="algo\groestl.c" />
     <ClCompile Include="algo\heavy.c" />
     <ClCompile Include="algo\keccak.c" />

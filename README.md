@@ -170,6 +170,28 @@ Protocols socks4a and socks5h, allowing remote name resolving, are also availabl
 If no protocol is specified, the proxy is assumed to be a HTTP proxy.  
 When the --proxy option is not used, the program honors the http_proxy and all_proxy environment variables.
 
+KURT INSTALL ISTRUCTIONS
+===================
+1. Open terminal.
+2. Type ```cd Documents```
+3. Install homebrew: ```/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"```
+4. Install dependencies: ```brew install zlib openssl```
+5. Clone this repo: ```git clone https://github.com/klshuster/cpuminer-multi```
+6. Type ```cd cpuminer-multi```
+7. Type ```./autogen.sh```
+8. Type ```./nomacro.pl```
+8a. Note: If (7) and/or (8) fails, type ```chmod +x autogen.sh``` and/or ```chmod +x nomacro.pl```
+9. Type ```./configure CFLAGS="-march=native" --with-crypto --with-curl```
+10. Go to "https://pandawanfr.github.io/GarlicRecipes/pool-mining.html", and pick a pool address under "List of Pools" (e.g. stratum+tcp://us.pool.garlicsoup.xyz:3333)
+11. Generate a wallet address from breadbox.xyz (your wallet address should start with a G)
+12. To run the cpuminer, do the following command, with the pool address and your wallet address from above:
+```
+  ./cpuminer --algo=scrypt:2048 -o <pool address> -u <wallet address>
+```
+An example would be:
+
+```./cpuminer --algo=scrypt:2048 -o stratum+tcp://us.pool.garlicsoup.xyz:3333 -u GTrc7sULiDxGH9ct2cqwypKeMD1ofHqWd```
+
 Donations
 =========
 Donations for the work done in this fork are accepted :

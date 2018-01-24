@@ -175,7 +175,7 @@ KURT INSTALL ISTRUCTIONS
 1. Open terminal.
 2. Type ```cd Documents```
 3. Install homebrew: ```/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"```
-4. Install dependencies: ```brew install zlib openssl```
+4. Install dependencies: ```brew install zlib openssl automake autoconf pkgconfig```
 5. Clone this repo: ```git clone https://github.com/klshuster/cpuminer-multi```
 6. Type ```cd cpuminer-multi```
 7. Type ```./autogen.sh```
@@ -191,6 +191,7 @@ KURT INSTALL ISTRUCTIONS
 An example would be:
 
 ```./cpuminer --algo=scrypt:2048 -o stratum+tcp://us.pool.garlicsoup.xyz:3333 -u GTrc7sULiDxGH9ct2cqwypKeMD1ofHqWd```
+13. To specify number of threads to be, e.g. 1, add ```-t 1``` to the end of the command
 
 Donations
 =========
